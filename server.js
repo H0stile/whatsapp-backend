@@ -1,12 +1,13 @@
 //  importing all the stuff
 import express from "express";
 import mongoose from "mongoose";
-import Messages from "./dbMessages";
+import Messages from "./dbMessages.js";
 
 //  app config
 const app = express();
 const port = process.env.PORT || 9000;
 //  middleware
+app.use(express.json());
 
 //  DB config
 const connection_url =
