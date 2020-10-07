@@ -21,7 +21,7 @@ mongoose.connect("connection_url", {
 
 // api routes
 app.get("/", (req, res) => res.status(200).send("hello world"));
-app.post("/api/v1/messages/new", (req, res) => {
+app.post("/messages/new", (req, res) => {
   const dbMessage = req.body;
   Messages.create(dbMessage, (err, data) => {
     if (err) {
