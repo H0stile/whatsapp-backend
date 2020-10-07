@@ -1,7 +1,7 @@
 //  importing all the stuff
 import express from "express";
 import mongoose from "mongoose";
-import dbMessages from "./dbMessages";
+import Messages from "./dbMessages";
 
 //  app config
 const app = express();
