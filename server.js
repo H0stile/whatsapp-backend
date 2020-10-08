@@ -12,7 +12,7 @@ app.use(express.json());
 //  DB config
 const connection_url =
   "mongodb+srv://admin:mhfmwBMUbN2gg25B@cluster0.onwfl.mongodb.net/whatsapp-mern?retryWrites=true&w=majority";
-mongoose.connect("connection_url", {
+mongoose.connect(connection_url, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
