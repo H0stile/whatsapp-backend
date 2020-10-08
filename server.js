@@ -2,10 +2,20 @@
 import express from "express";
 import mongoose from "mongoose";
 import Messages from "./dbMessages.js";
+import Pusher from "pusher";
+//  const Pusher = require("pusher");
 
 //  app config
 const app = express();
 const port = process.env.PORT || 9000;
+
+const pusher = new Pusher({
+  appId: "1087086",
+  key: "ea50c69ccb3fd03b258e",
+  secret: "3687d74b2b95c46f1566",
+  cluster: "eu",
+  encrypted: true,
+});
 //  middleware
 app.use(express.json());
 
